@@ -1,30 +1,25 @@
 import "./App.css";
+import ProfileCard from "./component/ProfileCard";
 import profilePhoto from "./images/avatar-jessica.jpeg";
 
 function App() {
+  const socialLinks = [
+    { url: "https://github.com/", text: "GitHub" },
+    { url: "https://in.linkedin.com/", text: "LinkedIn" },
+    { url: "https://x.com/", text: "twitter" },
+    { url: "https://www.frontendmentor.io/", text: "Frontend Mentor" },
+    { url: "https://www.instagram.com/", text: "Instagram" },
+  ];
+
   return (
     <div className="App">
-      <div className="profile">
-        <img className="profileImage" src={profilePhoto} alt="profile" />
-        <p className="name">Jessica Randall</p>
-        <p className="location">London, United Kingdom</p>
-        <p className="tagLine">"Front-end developer and avid reader."</p>
-        <a href="www.google.com" className="socialLink">
-          GitHub
-        </a>
-        <a href="www.google.com" className="socialLink">
-          Frontend Mentor
-        </a>
-        <a href="www.google.com" className="socialLink">
-          LinkedIn
-        </a>
-        <a href="www.google.com" className="socialLink">
-          Twitter
-        </a>
-        <a href="www.google.com" className="socialLink">
-          Instagram
-        </a>
-      </div>
+      <ProfileCard
+        profileImage={profilePhoto}
+        profileName="Jessica Randall"
+        location="London, United Kingdom"
+        tagLine='"Front-end developer and avid reader."'
+        links={socialLinks}
+      ></ProfileCard>
     </div>
   );
 }

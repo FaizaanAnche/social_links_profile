@@ -1,0 +1,55 @@
+.profile {
+  background-color: var(--darkGrey);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-family: Inter;
+  font-size: 14px;
+  width: 25%;
+  min-width: 350px;
+  padding: 28px;
+  gap: 14px;
+  border-radius: 8px;
+}
+
+.profileImage {
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.name {
+  font-size: 21px;
+  font-weight: 600;
+}
+
+.location {
+  color: var(--Green);
+  font-weight: 600;
+}
+
+.tagLine {
+  font-weight: 400;
+  margin: 14px 0;
+}
+
+.socialLink {
+  text-decoration: none;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  background-color: var(--Grey);
+  width: 100%;
+  border-radius: 8px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.socialLink:hover {
+  background-color: var(--Green);
+  color: var(--darkerGrey);
+  transition: 400ms;
+}
